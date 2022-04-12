@@ -5,9 +5,15 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
     "build": "parcel build",
-    "test": "jest --config ./jest.config.json"
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "start": "parcel",
+    "test": "jest --config ./jest.config.json",
+    "test-watch": "jest --watch --config ./jest.config.json"
+  },
+  "standard": {
+    "globals": ["it", "describe", "expect"]
   },
   "keywords": [],
   "author": "",
@@ -23,6 +29,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/react-hooks": "^7.0.2",
     "jest": "^27.5.1",
-    "parcel": "^2.4.1"
+    "parcel": "^2.4.1",
+    "standard": "^16.0.4"
   }
 }
