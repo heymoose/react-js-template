@@ -1,0 +1,7 @@
+{
+  "setupFilesAfterEnv": [
+    "<rootDir>/jestSetup.js"
+  ],
+  "testEnvironment": "jsdom",
+  "testRegex": "((\\.|/*.)(test))\\.js?$"
+}
